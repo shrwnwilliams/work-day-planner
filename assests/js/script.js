@@ -10,11 +10,7 @@ var planner9 = $("#9-input")
 
 // console.log(businessHours);
 
-// var savedPlannerContent = localStorage.getItem("plannerContent");
 
-// plannerContent.text(savedPlanneContent)
-
-// var userContent = planner9.val()
 
 
 var currentDayDisplay = $("#currentDay");
@@ -49,5 +45,7 @@ function init () {
 
 init();
 
-var txt2 = $("<p></p>").text("woah"); 
-$("body").append(txt2);
+
+
+// var txt2 = $("<p></p>").text("woah"); 
+// $("body").append(txt2);
