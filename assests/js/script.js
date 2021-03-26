@@ -13,14 +13,14 @@ var plannerContent15 = $(".plannerInput-15");
 var plannerContent16 = $(".plannerInput-16");
 var plannerContent17 = $(".plannerInput-17");
 var planner9 = $("#input-9");
-var planner10 = $("#input-10")
-var planner11 = $("#input-11")
-var planner12 = $("#input-12")
-var planner13 = $("#input-13")
-var planner14 = $("#input-14")
-var planner15 = $("#input-15")
-var planner16 = $("#input-16")
-var planner17 = $("#input-17")
+var planner10 = $("#input-10");
+var planner11 = $("#input-11");
+var planner12 = $("#input-12");
+var planner13 = $("#input-13");
+var planner14 = $("#input-14");
+var planner15 = $("#input-15");
+var planner16 = $("#input-16");
+var planner17 = $("#input-17");
 
 var currentDayDisplay = $("#currentDay");
 
@@ -31,7 +31,7 @@ var currentDayDisplay = $("#currentDay");
 // console.log(businessHours);
 
 var today = moment();
-var currentTime = moment().format("H")
+var currentTime = moment().format("H");
 
 currentDayDisplay.text(today.format("dddd, MMMM Do, YYYY"));
 // for (var i = 0; i<businessHours.length; i++) {
@@ -52,95 +52,95 @@ function init() {
   console.log(currentTime);
 }
 
-function changeTime9 () {
-    if (currentTime > 9){
-        planner9.addClass("past");
-    } else if (currentTime < 9) {
-        planner9.addClass("future");
-    } else {
-        planner9.addClass("present");
-    }
-};
+function changeTime9() {
+  if (currentTime > 9) {
+    planner9.addClass("past");
+  } else if (currentTime < 9) {
+    planner9.addClass("future");
+  } else {
+    planner9.addClass("present");
+  }
+}
 
-function changeTime10 () {
-  if (currentTime > 10){
-      planner10.addClass("past");
+function changeTime10() {
+  if (currentTime > 10) {
+    planner10.addClass("past");
   } else if (currentTime < 10) {
-      planner10.addClass("future");
+    planner10.addClass("future");
   } else {
-      planner10.addClass("present");
+    planner10.addClass("present");
   }
-};
+}
 
-function changeTime11 () {
-  if (currentTime > 11){
-      planner11.addClass("past");
+function changeTime11() {
+  if (currentTime > 11) {
+    planner11.addClass("past");
   } else if (currentTime < 11) {
-      planner11.addClass("future");
+    planner11.addClass("future");
   } else {
-      planner11.addClass("present");
+    planner11.addClass("present");
   }
-};
+}
 
-function changeTime12 () {
-  if (currentTime > 12){
-      planner12.addClass("past");
+function changeTime12() {
+  if (currentTime > 12) {
+    planner12.addClass("past");
   } else if (currentTime < 12) {
-      planner12.addClass("future");
+    planner12.addClass("future");
   } else {
-      planner12.addClass("present");
+    planner12.addClass("present");
   }
-};
+}
 
-function changeTime13 () {
-  if (currentTime > 13){
-      planner13.addClass("past");
+function changeTime13() {
+  if (currentTime > 13) {
+    planner13.addClass("past");
   } else if (currentTime < 13) {
-      planner13.addClass("future");
+    planner13.addClass("future");
   } else {
-      planner13.addClass("present");
+    planner13.addClass("present");
   }
-};
+}
 
-function changeTime14 () {
-  if (currentTime > 14){
-      planner14.addClass("past");
+function changeTime14() {
+  if (currentTime > 14) {
+    planner14.addClass("past");
   } else if (currentTime < 14) {
-      planner14.addClass("future");
+    planner14.addClass("future");
   } else {
-      planner14.addClass("present");
+    planner14.addClass("present");
   }
-};
+}
 
-function changeTime15 () {
-  if (currentTime > 15){
-      planner15.addClass("past");
+function changeTime15() {
+  if (currentTime > 15) {
+    planner15.addClass("past");
   } else if (currentTime < 15) {
-      planner15.addClass("future");
+    planner15.addClass("future");
   } else {
-      planner15.addClass("present");
+    planner15.addClass("present");
   }
-};
+}
 
-function changeTime16 () {
-  if (currentTime > 16){
-      planner16.addClass("past");
+function changeTime16() {
+  if (currentTime > 16) {
+    planner16.addClass("past");
   } else if (currentTime < 16) {
-      planner16.addClass("future");
+    planner16.addClass("future");
   } else {
-      planner16.addClass("present");
+    planner16.addClass("present");
   }
-};
+}
 
-function changeTime17 () {
-  if (currentTime > 17){
-      planner17.addClass("past");
+function changeTime17() {
+  if (currentTime > 17) {
+    planner17.addClass("past");
   } else if (currentTime < 17) {
-      planner17.addClass("future");
+    planner17.addClass("future");
   } else {
-      planner17.addClass("present");
+    planner17.addClass("present");
   }
-};
+}
 
 // RE REVIEW EVENT DELEGATION TUESDAY VIDS 7 AND 8
 
@@ -205,7 +205,6 @@ mainContainer.on("click", function (event) {
     localStorage.setItem("plannerContent17", plannerGoods17);
   }
 });
-
 
 init();
 
