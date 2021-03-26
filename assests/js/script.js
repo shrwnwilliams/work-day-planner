@@ -12,6 +12,7 @@ var planner9 = $("#9-input");
 
 var currentDayDisplay = $("#currentDay");
 var today = moment();
+var currentTime = moment().format("H")
 
 currentDayDisplay.text(today.format("dddd, MMMM Do, YYYY"));
 // for (var i = 0; i<businessHours.length; i++) {
@@ -21,18 +22,17 @@ currentDayDisplay.text(today.format("dddd, MMMM Do, YYYY"));
 function init() {
   renderSavedContent();
   changeTime();
+  console.log(currentTime);
 }
 
 function changeTime () {
-    var currentTime = moment().format("h:mm:ss a")
-    if (currentTime < 8){
+    if (currentTime > 9){
         planner9.addClass("past");
-    } else if (currentTime > 9) {
+    } else if (currentTime < 9) {
         planner9.addClass("future");
     } else {
         planner9.addClass("present");
     }
-
 }
 
 function renderSavedContent() {
